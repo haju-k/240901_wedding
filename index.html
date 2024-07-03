@@ -6,181 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/comms.css">
-  <title>Image Gallery</title>
+  <title>Wedding Day</title>
 </head>
-<style>
-
-.toggle-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.toggle-item {
-    margin-bottom: 10px;
-}
-
-.toggle-checkbox {
-    display: none;
-}
-
-.toggle-label {
-    display: block;
-    background-color: #ffff;
-    color: #333;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 2rem;
-    border: solid 1px #E1E4E9;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    background-color: #f1f1f1;
-    padding: 0 10px;
-    border-radius: 5px;
-}
-
-.toggle-checkbox:checked + .toggle-label + .toggle-content {
-    max-height: 200px; /* 충분히 큰 값으로 설정 */
-    padding: 10px;
-}
-
-.copy-button {
-    display: block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.copy-button:hover {
-    background-color: #0056b3;
-}
-
-
-.toggle-content li {
-    padding:0 3rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-
-
-
-.image-section {
-    position: relative;
-    margin-top: 20px;
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-}
-
-.image-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
-}
-
-
-.new-section {
-    padding:2rem;
-}
-
-.new-section img{
-    width: 100%;
-    height: auto;
-    border-radius: 2rem;
-
-}
-
-
-
-</style>
 
 </head>
 <body>
     <div id="wrap">
         <div class="wadding-area">
         <header class="full-page-header">
-            <h1>Welcome to the Responsive Mobile Web Page</h1>
+            <div class="inner-header">
+                <!--wavetop-->
+
+                    <div class="inner">
+                        <h1>2024 / 09 / 01 </h1>
+                        <P>저희 결혼합니다</P>
+                    </div>
+   
+            <div class="wave top">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
+                <g class="parallax">
+                <use class="u-1" xlink:href="#gentle-wave" x="48" y="0" fill="rgba(250,250,250,0.7)"></use>
+                <use class="u-2" xlink:href="#gentle-wave" x="48" y="3" fill="rgba(250,250,250,0.5)"></use>
+                <use class="u-3" xlink:href="#gentle-wave" x="48" y="5" fill="rgba(250,250,250,0.3)"></use>
+                <use class="u-4" xlink:href="#gentle-wave" x="48" y="7" fill="rgba(250,250,250,0.2)"></use>
+                </g>
+                </svg>
+            </div>
+            <div class="top-img">
+                <img src="photo/main.jpg">
+            </div>
+            <!--Waves Container-->
+            <div class="wave bottom">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
+                <g class="parallax">
+                <use class="u-1" xlink:href="#gentle-wave" x="48" y="0" fill="rgba(250,250,250,0.7)"></use>
+                <use class="u-2" xlink:href="#gentle-wave" x="48" y="3" fill="rgba(250,250,250,0.5)"></use>
+                <use class="u-3" xlink:href="#gentle-wave" x="48" y="5" fill="rgba(250,250,250,0.3)"></use>
+                <use class="u-4" xlink:href="#gentle-wave" x="48" y="7" fill="rgba(250,250,250,0.2)"></use>
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+            </div>
+            <!--Content starts-->
+        <div class="content">
+            <div class="inner">
+                <h3>이화석 ♥ 김주하 </h3>
+                <P>2024년 9월 1일 일요일 오후 3시<br>
+                    마리아쥬스퀘어</P>
+            </div>
+        </div>
+  <!--Content ends-->
         </header>
        <!--header-->
        <!--message(S)-->
        <section>
         <div class="tit_area">
             <span>invitation</span>
-            <h3>초대합니다</h3>
+            <h3>소중한 분들을 초대합니다.</h3>
+            <p class="invi">
+                힘든 일이 있어도 기쁜 일이 있어도<br>
+                함께 하고 싶은 사람을 만났습니다.<br>
+                작은 행복에도 미소 지으며,<br>
+                서로가 서로를 소중히 여기겠습니다.<br><br>
+                설레는 시작의 순간,<br><br>
+                가까이서 축복해 주시면<br>
+                더 큰 기쁨으로 간직하겠습니다.
+            </p>
         </div>
         <div class="map">
-            테스트중
+       
         </div>
     </section>
         <section>
             <div class="tit_area">
-                <span>gallery</span>
-                <h3>이미지 갤러리 입니다</h3>
+                <span>Gallery</span>
+                <h3>우리의 순간</h3>
             </div>
-            <div class="gallery">
-                <ul class="gallery-container">
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                    <li><img src="photo/img01.jpg" alt="Gallery Image 1"></li>
-                </ul>
+             <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="photo/img00.jpg" alt="">
+              <img src="photo/img02.jpg" alt="">
+              <img src="photo/img04.jpg" alt="">
+              <img src="photo/img11.jpg" alt="">
+              <img src="photo/img06.jpg" alt="">
             </div>
+            <div class="column">
+              <img src="photo/img07.jpg" alt="">
+              <img src="photo/img05.jpg" alt="">
+              <img src="photo/img09.jpg" alt="">
+              <img src="photo/img23.jpg" alt="">
+              <img src="photo/img20.jpg" alt="">
+              <img src="photo/img13.jpg" alt="">
+    
+            </div>
+            <div class="column">
+              <img src="photo/img15.jpg" alt="">
+              <img src="photo/img22.jpg" alt="">
+              <img src="photo/img16.jpg" alt="">
+              <img src="photo/img17.jpg" alt="">
+              <img src="photo/img18.jpg" alt="">
+              <img src="photo/img31.jpg" alt="">
+            </div>
+          </div>
+  
         </section>
-
+        <!--map-->
         <section>
             <div class="tit_area">
                 <span>map</span>
                 <h3>오시는 길</h3>
+                <p class="map">
+                    <span>마리아쥬스퀘어</span><br>
+                    서울 강남구 도산대로 318 SB타워 G층<br><br>
+                    02-541-5007</p>
+                </p>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.391711395831!2d127.03435967550213!3d37.52226257205021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca38bdf2ab971%3A0x90bee6c4066025d0!2z66eI66as7JWE7KWsIOyKpO2AmOyWtA!5e0!3m2!1sko!2skr!4v1719978837787!5m2!1sko!2skr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <ul>
-            <li> <a href="https://naver.me/xAtFAFlU" target="_blank" class="map-button">네이버 지도</a></li>
-            <li> <a href="https://kko.to/DXprp4kiBp" target="_blank" class="map-button">카카오 지도</a></li>
-              
-        </ul>
+            <!--navi-->
+            <ul class="wayto anibox hd visible animated fadeInUp">
+                <li class="li navi">
+                <div class="navi_button_wrap">
+                    <a class="navi_button" href="https://naver.me/xAtFAFlU" target="_blank"><span>네이버지도</span></a>
+                    <a class="navi_button" onclick="fnCallWeb2App('tmap')"><span>티맵</span></a>
+                    <a class="navi_button" href="https://kko.to/DXprp4kiBp" target="_blank" ><span>카카오내비</span></a>
+                </div>
+                </li>
+            </ul>
             </div>
         </section>
 
-        <div class="new-section">
-            <h2>New Section</h2>
-            <img src="photo/img11.jpg">
-         </div>
-        
         <!--계좌번호-->
         <section>
             <ul class="toggle-list">
                 <li class="toggle-item">
                     <input type="checkbox" id="toggle1" class="toggle-checkbox">
-                    <label for="toggle1" class="toggle-label">신랑측 계좌번호</label>
+                    <label for="toggle1" class="toggle-label">신랑측 계좌번호 <i class="fa fa-chevron-down"></i></label>
                     <div class="toggle-content">
                         <ul>
                             <li><p>이화석 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
@@ -193,7 +158,7 @@
                     <label for="toggle2" class="toggle-label">신부측 계좌번호</label>
                     <div class="toggle-content">
                         <ul>
-                            <li><p>김주하 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
+                            <li><p><span>김주하</span><br> 국민은행 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
                             <li><p>아버지 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
                             <li><p>어머니 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
                         </ul>
@@ -202,23 +167,26 @@
             </ul>
         </section>
 
+        
 
         <div class="image-section">
             <img src="photo/imglast.jpg">
         </div>
 
-       
+
+
         <!--gellry-->
         <footer>
         </footer>
         <!--footer-->
     </div>
 
-<!--계좌번호 복사-->
-<script>
-    function copyToClipboard(text) {
-        navigator.clipboard.writeText(text);
-    }
-</script>
+    <!--계좌번호 복사-->
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+        }
+    </script>
+
 </body>
 </html>
