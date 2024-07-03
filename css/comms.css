@@ -13,7 +13,7 @@
 }
 h3,
 .toggle-label
-{font-family: 'Ownglyph_ryuttung-Rg', sans-serif;}
+{font-family: 'Minhye', sans-serif;}
 
 .wadding-area {
     background: white;
@@ -91,11 +91,14 @@ ul.gallery-container {
 }
 
 .inner-header {
-    /*height:85vh;*/
+    height:85vh;
     width:100%;
     margin: 0;
     padding: 0;
+    font-family: 'GowunBatang-Regular', sans-serif; 
   }
+
+
   
   .flex { /*Flexbox for containers*/
     display: flex;
@@ -113,26 +116,30 @@ ul.gallery-container {
     max-height: 5rem;
   }
   
-  header .inner {
+  header .top-day {
     position:relative;
     width: 100%;
+    padding:2rem 0;
     text-align:center;
     color:black;
     background-color: white;
   }
 
-  header .inner h1 {
+ .top-day h1 {
     font-size:3.2rem;
-    padding:1rem 0; 
+    padding-bottom: 1.5rem;
   }
-  header .inner-header.inner p {
-    font-family: 'Ownglyph_ryuttung-Rg', sans-serif; 
-    font-size: 2.6rem; 
+.tit_area p,
+.top-day p {
+  font-family: 'GowunBatang-Regular', sans-serif; 
+    font-size: 2rem; 
     line-height: 2.2rem; 
     color:#818181;
   }
-.content .inner h3 { font-family: 'Ownglyph_ryuttung-Rg', sans-serif;  font-size: 2.6rem; padding-bottom:1.5rem; }
-.content .inner p {font-size: 1.8rem; line-height: 2.2rem;  color:#818181; letter-spacing: 1.5px;}
+.content .inner h3 { font-family: 'Minhye', sans-serif;  font-size: 2.6rem; padding-bottom:1.5rem; }
+.content .inner p {
+  font-family: 'GowunBatang-Regular', sans-serif; 
+  font-size: 1.8rem; line-height: 2.6rem;  color:#686262; letter-spacing: 1px;}
 
 header .top-img img {max-width: 100%;}
 
@@ -190,10 +197,9 @@ header .top-img img {max-width: 100%;}
 }
 
 p.invi { 
-  font-size: 1.6em; 
-  padding-top: 4rem;
-line-height: 3rem; 
-color: #49413a;}
+    font-family: 'GowunBatang-Regular', sans-serif; 
+    font-size: 1.8rem; line-height: 2.6rem;  color:#686262;
+line-height: 3rem; }
 
 p.map {
 font-size: 1.6em; 
@@ -243,8 +249,8 @@ p.map span{
 
 .toggle-label {
   display: block;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
   background-color: #ffff;
   color: #333;
   font-size: 2.4rem;
@@ -382,6 +388,24 @@ ul.wayto .navi_button>span {
   margin-top: 20px;
 }
 
+.text-overlay {
+  position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+    color: white;
+    text-align: right;
+    line-height: 3rem;
+    font-family: 'GowunBatang-Regular', sans-serif;
+    color: #fff;
+    font-size: 3.2rem;
+    opacity: 0.7;
+}
+
+.text-overlay h1, .text-overlay p {
+  margin: 0;
+}
+
+
 .image-section img {
   width: 100%;
   height: auto;
@@ -417,3 +441,6 @@ ul.wayto .navi_button>span {
     }
 
 }
+
+
+
