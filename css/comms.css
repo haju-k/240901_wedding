@@ -11,31 +11,38 @@
     min-height: 100vh;
     color: #333;
 }
+h3,
+.toggle-label
+{font-family: 'Ownglyph_ryuttung-Rg', sans-serif;}
 
 .wadding-area {
     background: white;
     box-shadow: 0 0 1rem rgba(0,0,0,0.1); /* 10px */
     text-align: center;
     width: 90%;
-    max-width: 60rem; /* 600px */
+    max-width: 50rem; /* 600px */
     overflow: hidden;
 }
 
+.inner-header {
+    padding: 4rem 3rem;
+    text-align: center;
+    letter-spacing: -.2px;
+    font-family: Crimson Pro;
+    color: #49413a;
+}
 
 .full-page-header {
     height: 100vh; /* 전체 화면 높이 */
-    background: url('../photo/img01.jpg') no-repeat center center/cover; /* 배경 이미지 설정 */
-    display: flex;
+    /* background: url('../photo/main.jpg') no-repeat center center/cover; /* 배경 이미지 설정 */
+   display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     color: white;
-    text-align: center;
+    flex-direction: column;
 }
 
-.full-page-header h1 {
-    font-size: 2.5rem; /* 헤더 제목 폰트 크기 */
-}
-
+.full-page-header h1 { font-size: 2.5rem; /* 헤더 제목 폰트 크기 */}
 
 section {padding: 3rem;}
 
@@ -49,28 +56,26 @@ section {padding: 3rem;}
 }
 .tit_area { 
     padding:2rem 0;
-    text-align: left;
+    text-align: center;
+    color:#d2a369;
 }
 .tit_area span {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 4rem;
 }
 
 .tit_area h3 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+    padding-bottom:4rem ;
 }
 
 
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 1.25rem; /* 20px = 1.25rem */
-}
-
-.gallery li {
-    flex: 1 1 calc(33.333% - 1.25rem); /* 가로 3개, 간격 고려 */
+ul.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    grid-auto-flow: row dense;
 }
 
 
@@ -85,7 +90,328 @@ section {padding: 3rem;}
     height: 100%;
 }
 
-@media (max-width: 37.5rem) { /* 600px = 37.5rem */
+.inner-header {
+    /*height:85vh;*/
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 1rem;
+    max-height: 5rem;
+  }
+  
+  header .inner {
+    position:relative;
+    width: 100%;
+    text-align:center;
+    color:black;
+    background-color: white;
+  }
+
+  header .inner h1 {
+    font-size:3.2rem;
+    padding:1rem 0; 
+  }
+  header .inner-header.inner p {
+    font-family: 'Ownglyph_ryuttung-Rg', sans-serif; 
+    font-size: 2.6rem; 
+    line-height: 2.2rem; 
+    color:#818181;
+  }
+.content .inner h3 { font-family: 'Ownglyph_ryuttung-Rg', sans-serif;  font-size: 2.6rem; padding-bottom:1.5rem; }
+.content .inner p {font-size: 1.8rem; line-height: 2.2rem;  color:#818181; letter-spacing: 1.5px;}
+
+header .top-img img {max-width: 100%;}
+
+  .wave.top {
+    position: relative;
+    top: 30px;
+    transform: scaleY(-1);
+    transition: .3s;
+    display: block;
+    margin-top: -30px
+}
+.wave.bottom {
+    position: relative;
+    top: -30px;
+    margin-bottom: -30px;
+    display: block
+}
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+.inner {
+    display: flex;
+    padding:2rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p.invi { 
+  font-size: 1.6em; 
+  padding-top: 4rem;
+line-height: 3rem; 
+color: #49413a;}
+
+p.map {
+font-size: 1.6em; 
+padding-bottom: 3rem;
+line-height: 2rem; 
+color: #49413a;}
+
+p.map span{
+  font-size: 1.6em; 
+}
+
+/*포토 갤러리*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-between;
+}
+
+.row img {width: 100%;}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 31%; /* IE10 */
+  flex: 31;
+  max-width: 31%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*토글*/
+
+.toggle-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-item {margin-bottom: 10px;}
+.toggle-checkbox {display: none;}
+
+.toggle-label {
+  display: block;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #ffff;
+  color: #333;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  border: solid 2px #E1E4E9;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  padding: 0 10px;
+  border-radius: 0.5rem;
+}
+
+.toggle-content li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: solid 1px #E1E4E9;
+}
+.toggle-content li p {font-size: 1.6rem; text-align: left; line-height: 2.5rem;}
+.toggle-content li span {font-weight: 700;}
+
+
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
+  max-height: 200px; /* 충분히 큰 값으로 설정 */
+  padding: 10px;
+}
+
+.copy-button {
+  display: block;
+  padding: 0.5rem 1rem;
+  background: #f1f3f8;
+  color: #333;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  right: 12px;
+  top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  font-family: noto sans kr, sans-serif;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.accst02 .pack_wrap.active .pack i {
+  transform: rotate(180deg);
+}
+.accst02 .pack > i {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.navi_button_wrap {
+  display: flex;
+  margin: 0 -3px;
+  margin-top: 12px
+}
+.navi_button {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  margin: 0 3px;
+  border: 1px solid #eaeaea;
+  height: 5.7rem;
+  width: 33.333%;
+  background: #fff;
+  border-radius: 12px;
+  height: 4rem;
+  border-radius: 8px
+}
+
+ul.wayto .navi_button>span {
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 22px
+}
+
+.navi_button>span:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/ico_nav03.png);
+  background-size: 17px auto;
+  margin-top: -8.5px
+}
+
+.navi_button:nth-child(2)>span:before {
+  background-image: url(../img/ico_nav02.png)
+}
+
+.navi_button:nth-child(3)>span:before {
+  background-image: url(../img/ico_nav01.png)
+}
+
+.navi_button>span {
+  font-size: 1.4rem
+}
+
+
+
+.image-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15rem;
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+}
+
+
+.new-section {
+  padding:2rem;
+}
+
+.new-section img{
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+
+}
+
+
+@media screen and (max-width: 42.5rem)  { 
+    .wadding-area {width:100%}
     .gallery, .map {
         padding: 0.625rem; /* 10px = 0.625rem */
     }

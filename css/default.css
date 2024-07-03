@@ -1,4 +1,12 @@
 ﻿@charset "utf-8";
+
+@font-face {
+    font-family: 'Ownglyph_ryuttung-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'NotoSansCJKkr';
     font-display: auto;
@@ -33,8 +41,10 @@
 }
 
 
+
+
 /* default */
-html{overflow-y:auto;font-size:10px;font-family: "NotoSansCJKkr", -apple-system, Apple SD Gothic Neo, android sans fullback, sans-serif;line-height:1;color:#222;background-color:var(--whiet);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;-moz-osx-font-smoothing:grayscale}
+html{overflow-y:auto;font-size:10px;font-family:  "Ownglyph_ryuttung-Rg", "NotoSansCJKkr", -apple-system, Apple SD Gothic Neo, android sans fullback, sans-serif;line-height:1;color:#222;background-color:var(--whiet);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;-moz-osx-font-smoothing:grayscale}
 body:before{position:fixed;left:0;top:0;width:100%;height:0;content:''}
 body {overflow: hidden; width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,iframe,th,td{margin:0;padding:0}
