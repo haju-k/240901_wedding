@@ -8,6 +8,76 @@
   <link rel="stylesheet" href="css/comms.css">
   <title>Image Gallery</title>
 </head>
+<style>
+
+.toggle-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-item {
+    margin-bottom: 10px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    background-color: #ffff;
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: solid 1px #E1E4E9;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
+    max-height: 200px; /* 충분히 큰 값으로 설정 */
+    padding: 10px;
+}
+
+.copy-button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+
+.toggle-content li {
+    padding:0 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+</style>
 
 </head>
 <body>
@@ -21,10 +91,10 @@
        <section>
         <div class="tit_area">
             <span>invitation</span>
-            <h3>이미지 갤러리 입니다</h3>
+            <h3>초대합니다</h3>
         </div>
         <div class="map">
-       
+            테스트중
         </div>
     </section>
         <section>
@@ -53,16 +123,50 @@
         <section>
             <div class="tit_area">
                 <span>map</span>
-                <h3>이미지 갤러리 입니다</h3>
+                <h3>오시는 길</h3>
             </div>
             <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.391711395831!2d127.03435967550213!3d37.52226257205021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca38bdf2ab971%3A0x90bee6c4066025d0!2z66eI66as7JWE7KWsIOyKpO2AmOyWtA!5e0!3m2!1sko!2skr!4v1719978837787!5m2!1sko!2skr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            
             </div>
         </section>
+        <!--계좌번호-->
+        <section>
+            <ul class="toggle-list">
+                <li class="toggle-item">
+                    <input type="checkbox" id="toggle1" class="toggle-checkbox">
+                    <label for="toggle1" class="toggle-label">신랑측 계좌번호</label>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><p>이화석 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                            <li><p>어머니 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="toggle-item">
+                    <input type="checkbox" id="toggle2" class="toggle-checkbox">
+                    <label for="toggle2" class="toggle-label">신부측 계좌번호</label>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><p>김주하 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
+                            <li><p>아버지 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                            <li><p>어머니 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
         <!--gellry-->
         <footer>
         </footer>
         <!--footer-->
     </div>
+<!--계좌번호 복사-->
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+    }
+</script>
 </body>
 </html>
