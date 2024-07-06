@@ -1,4 +1,7 @@
-
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #wrap {
     font-family: 'Arial', sans-serif;
@@ -11,11 +14,11 @@
     min-height: 100vh;
     color: #333;
 }
-h3,
+h3,.header-top p,
 .toggle-label
 {font-family: 'Minhye', sans-serif;}
 
-.wadding-area {
+.wedding-area {
     background: white;
     box-shadow: 0 0 1rem rgba(0,0,0,0.1); /* 10px */
     text-align: center;
@@ -25,7 +28,6 @@ h3,
 }
 
 .inner-header {
-    padding: 4rem 3rem;
     text-align: center;
     letter-spacing: -.2px;
     font-family: Crimson Pro;
@@ -33,18 +35,52 @@ h3,
 }
 
 .full-page-header {
-    height: 100vh; /* 전체 화면 높이 */
-    /* background: url('../photo/main.jpg') no-repeat center center/cover; /* 배경 이미지 설정 */
+    height: 95vh; /* 전체 화면 높이 
+     background: url('../photo/main.jpg') no-repeat center center/cover;*/
    display: flex;
-    justify-content: center;
-    align-items: center;*/
-    color: white;
-    flex-direction: column;
+   /*align-items: center;*/
+   text-align: center;
+   flex-direction: column;
+   justify-content: space-between;
+
 }
 
-.full-page-header h1 { font-size: 2.5rem; /* 헤더 제목 폰트 크기 */}
+.full-page-header h1 { font-size: 2.5rem; font-weight: 700;/* 헤더 제목 폰트 크기 */}
 
-section {padding: 3rem;}
+.header-top{
+  position: relative;
+  width: 100%;
+  padding:4rem 0 3rem;
+background-color: #fff;
+font-family: 'GowunBatang-Regular', sans-serif; 
+}
+
+
+
+.header-bottom {
+  position: relative;
+  bottom:0;
+  padding:4rem 0 3rem;
+  background-color: #fff;
+}
+
+.header-top p,
+.header-bottom p {
+  padding-top:1rem; 
+  line-height: 2.5rem;
+  font-family: 'GowunBatang-Regular', sans-serif; 
+  font-size: 1.6rem;}
+
+  .header-bottom h3 {font-size: 2.8rem;}
+p {
+line-height: 2.5rem;
+font-family: 'GowunBatang-Regular', sans-serif; 
+font-size: 1.6rem;
+}
+
+section {
+  position: relative;
+  padding: 3rem;}
 
 .container {
     padding:2rem 0;
@@ -55,186 +91,121 @@ section {padding: 3rem;}
     overflow: hidden;
 }
 .tit_area { 
-    padding:2rem 0;
+    padding:3rem 0;
     text-align: center;
     color:#d2a369;
 }
 .tit_area span {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'GowunBatang-Regular', sans-serif; 
 }
 
 .tit_area h3 {
     font-size: 3.2rem;
-    padding-bottom:4rem ;
 }
 
 
-ul.gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    grid-auto-flow: row dense;
-}
-
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-#map {
-    width: 100%;
-    height: 100%;
-}
-
-.inner-header {
-    height:85vh;
-    width:100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'GowunBatang-Regular', sans-serif; 
-  }
-
-
-  
-  .flex { /*Flexbox for containers*/
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-  }
 
 .waves {
-    position: relative;
-    width: 100%;
-    height: 15vh;
-    margin-bottom: -7px;
-    min-height: 1rem;
-    max-height: 5rem;
-  }
-  
-  header .top-day {
-    position:relative;
-    width: 100%;
-    padding:2rem 0;
-    text-align:center;
-    color:black;
-    background-color: white;
-  }
+  position: relative;
+  width: 100%;
+  height: 3.5vh;
+  margin-bottom: -7px;
+  min-height: 1rem;
+  max-height: 5rem;
+}
 
- .top-day h1 {
-    font-size:3.2rem;
-    padding-bottom: 1.5rem;
-  }
-.tit_area p,
-.top-day p {
-  font-family: 'GowunBatang-Regular', sans-serif; 
-    font-size: 2rem; 
-    line-height: 2.2rem; 
-    color:#818181;
-  }
-.content .inner h3 { font-family: 'Minhye', sans-serif;  font-size: 2.6rem; padding-bottom:1.5rem; }
-.content .inner p {
-  font-family: 'GowunBatang-Regular', sans-serif; 
-  font-size: 1.8rem; line-height: 2.6rem;  color:#686262; letter-spacing: 1px;}
-
-header .top-img img {max-width: 100%;}
-
-  .wave.top {
-    position: relative;
-    top: 30px;
-    transform: scaleY(-1);
-    transition: .3s;
-    display: block;
-    margin-top: -30px
+.wave.top {
+  position: relative;
+  top:3.2rem;
+  transform: scaleY(-1);
+  transition: .3s;
+  display: block;
+  margin-top: -30px
 }
 .wave.bottom {
-    position: relative;
-    top: -30px;
-    margin-bottom: -30px;
-    display: block
-}
-  
-  /* Animation */
-  
-  .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
-  .parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  @keyframes move-forever {
-    0% {
-     transform: translate3d(-90px,0,0);
-    }
-    100% { 
-      transform: translate3d(85px,0,0);
-    }
-  }
-
-.inner {
-    display: flex;
-    padding:2rem 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  top: -30px;
+  margin-bottom: -30px;
+  display: block
 }
 
-p.invi { 
-    font-family: 'GowunBatang-Regular', sans-serif; 
-    font-size: 1.8rem; line-height: 2.6rem;  color:#686262;
-line-height: 3rem; }
-
-p.map {
-font-size: 1.6em; 
-padding-bottom: 3rem;
-line-height: 2rem; 
-color: #49413a;}
-
-p.map span{
-  font-size: 1.6em; 
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)  infinite;
 }
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+
+
+
+.img-area img {width: 100%;
+border-radius: 2rem;}
+
+
+
 
 /*포토 갤러리*/
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: space-between;
 }
 
 .row img {width: 100%;}
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 31%; /* IE10 */
-  flex: 31;
-  max-width: 31%;
-  padding: 0 4px;
+-ms-flex: 31%; /* IE10 */
+flex: 31;
+max-width: 31%;
+display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .column img {
-  margin-bottom: 1rem;
-  vertical-align: middle;
-  width: 100%;
+margin-bottom: 1rem;
+vertical-align: middle;
+width: 100%;
+border-radius: 1rem;
 }
+
+
+
 
 /*토글*/
 
@@ -243,6 +214,7 @@ p.map span{
   padding: 0;
   margin: 0;
 }
+.toggle-list p {font-family: Arial, Helvetica, sans-serif;}
 
 .toggle-item {margin-bottom: 10px;}
 .toggle-checkbox {display: none;}
@@ -282,7 +254,7 @@ p.map span{
 
 
 .toggle-checkbox:checked + .toggle-label + .toggle-content {
-  max-height: 200px; /* 충분히 큰 값으로 설정 */
+  max-height: 25rem; /* 충분히 큰 값으로 설정 */
   padding: 10px;
 }
 
@@ -304,6 +276,7 @@ p.map span{
   font-family: noto sans kr, sans-serif;
   line-height: 2.4rem;
   font-weight: 700;
+  border-radius:1rem;
 }
 
 .accst02 .pack_wrap.active .pack i {
@@ -434,11 +407,10 @@ ul.wayto .navi_button>span {
 }
 
 
+
+
 @media screen and (max-width: 42.5rem)  { 
     .wadding-area {width:100%}
-    .gallery, .map {
-        padding: 0.625rem; /* 10px = 0.625rem */
-    }
 
 }
 
