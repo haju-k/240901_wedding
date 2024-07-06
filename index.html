@@ -12,16 +12,13 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="wadding-area">
+        <div class="wedding-area">
         <header class="full-page-header">
-            <div class="inner-header">
-                <!--wavetop-->
-
-                    <div class="top-day">
-                        <h1>2024 / 09 / 01 </h1>
-                        <P>저희 결혼합니다</P>
-                    </div>
-   
+            <div class="header-top">
+                <h1>2024 / 09 / 01 </h1>
+                <P>저희 결혼합니다</P>
+            </div>
+            <!--wavetop-->
             <div class="wave top">
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
@@ -34,7 +31,7 @@
                 </svg>
             </div>
             <div class="top-img">
-                <img src="photo/main.jpg">
+                <img src="photo/main_.jpg">
             </div>
             <!--Waves Container-->
             <div class="wave bottom">
@@ -49,38 +46,35 @@
                 </svg>
             </div>
             <!--Waves end-->
+            <div class="header-bottom">
+                <div class="inner">
+                    <h3>이화석 ♥ 김주하 </h3>
+                    <P>2024년 9월 1일 일요일 오후 3시<br>
+                        마리아쥬스퀘어</P>
+                </div>
             </div>
-            <!--Content starts-->
-        <div class="content">
-            <div class="inner">
-                <h3>이화석 ♥ 김주하 </h3>
-                <P>2024년 9월 1일 일요일 오후 3시<br>
-                    마리아쥬스퀘어</P>
-            </div>
-        </div>
-  <!--Content ends-->
         </header>
        <!--header-->
-       <!--message(S)-->
-       <section>
-        <div class="tit_area">
-            <span>invitation</span>
-            <h3>소중한 분들을 초대합니다.</h3>
+        <section class="invitation">
+            <div class="img-area">
+                <img src="photo/img26.jpg">
+            </div>
+           
+            <div class="tit_area">
+                <span>invitation</span>
+                <h3>소중한 분들을 초대합니다.</h3>
+            </div>
             <p class="invi">
-                힘든 일이 있어도 기쁜 일이 있어도<br>
-                함께 하고 싶은 사람을 만났습니다.<br>
-                작은 행복에도 미소 지으며,<br>
-                서로가 서로를 소중히 여기겠습니다.<br><br>
-                설레는 시작의 순간,<br><br>
-                가까이서 축복해 주시면<br>
-                더 큰 기쁨으로 간직하겠습니다.
+            힘든 일이 있어도 기쁜 일이 있어도<br>
+            함께 하고 싶은 사람을 만났습니다.<br>
+            작은 행복에도 미소 지으며,<br>
+            서로가 서로를 소중히 여기겠습니다.<br><br>
+            설레는 시작의 순간,<br><br>
+            가까이서 축복해 주시면<br>
+            더 큰 기쁨으로 간직하겠습니다.
             </p>
-        </div>
-        <div class="map">
-       
-        </div>
-    </section>
-        <section>
+        </section>
+        <section class="photo">
             <div class="tit_area">
                 <span>Gallery</span>
                 <h3>우리의 순간</h3>
@@ -90,32 +84,38 @@
             <div class="column">
                 <img src="photo/img00.jpg" alt="">
               <img src="photo/img02.jpg" alt="">
-              <img src="photo/img04.jpg" alt="">
-              <img src="photo/img11.jpg" alt="">
               <img src="photo/img14.jpg" alt="">
+              <img src="photo/img20.jpg" alt="">
+              <img src="photo/img30.jpg" alt="">
+              <img src="photo/img34.jpg" alt="">
             </div>
             <div class="column">
               <img src="photo/img07.jpg" alt="">
               <img src="photo/img05.jpg" alt="">
               <img src="photo/img09.jpg" alt="">
-              <img src="photo/img23.jpg" alt="">
-              <img src="photo/img20.jpg" alt="">
+              <img src="photo/img35.jpg" alt="">
+              <img src="photo/img17.jpg" alt="">
               <img src="photo/img13.jpg" alt="">
+              <img src="photo/img33.jpg" alt="">
     
             </div>
             <div class="column">
               <img src="photo/img15.jpg" alt="">
               <img src="photo/img22.jpg" alt="">
+              <img src="photo/img23.jpg" alt="">
               <img src="photo/img16.jpg" alt="">
-              <img src="photo/img17.jpg" alt="">
               <img src="photo/img18.jpg" alt="">
+              <img src="photo/img36.jpg" alt="">
               <img src="photo/img31.jpg" alt="">
+              <img src="photo/img24.jpg" alt="">
             </div>
           </div>
-  
+
+        <!--modal-->
         </section>
-        <!--map-->
-        <section>
+
+           <!--map-->
+           <section>
             <div class="tit_area">
                 <span>map</span>
                 <h3>오시는 길</h3>
@@ -140,6 +140,7 @@
             </div>
         </section>
 
+
         <!--계좌번호-->
         <section>
             <ul class="toggle-list">
@@ -148,8 +149,8 @@
                     <label for="toggle1" class="toggle-label">신랑측 계좌번호 <i class="fa fa-chevron-down"></i></label>
                     <div class="toggle-content">
                         <ul>
-                            <li><p>이화석 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
-                            <li><p>어머니 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                            <li><p>신한은행 110-317-722227<br><span>이화석</span></p><button class="copy-button" onclick="copyToClipboard('110317722227')">복사하기</button></li>
+                            <li><p>국민은행 480001-01-237240<br><span>신순우</span></p><button class="copy-button" onclick="copyToClipboard('4800010123724')">복사하기</button></li>
                         </ul>
                     </div>
                 </li>
@@ -158,16 +159,14 @@
                     <label for="toggle2" class="toggle-label">신부측 계좌번호</label>
                     <div class="toggle-content">
                         <ul>
-                            <li><p><span>김주하</span><br> 국민은행 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
-                            <li><p>아버지 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
-                            <li><p>어머니 1234-5678-9101</p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                            <li><p>국민은행 012501-04-128126<br><span>김주하</span></p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
+                            <li><p>농협    963-02-221096<br><span>김생수</span></p><button class="copy-button" onclick="copyToClipboard('96302221096')">복사하기</button></li>
+                            <li><p>신한은행 012501-04-128126<br><span>조일분</span></p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </section>
-
-        
 
         <div class="image-section">
         
@@ -177,22 +176,48 @@
                 the day we met</div>
         </div>
 
-
-
-        <!--gellry-->
-        <footer>
-        </footer>
-        <!--footer-->
+        <!--.wedding-area-->
+       </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--계좌번호 복사-->
     <script>
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text);
         }
 
-        
-    </script>
+    $(document).ready(function() {
+        var modal = $("#myModal");
+        var modalImg = $("#img01");
+        var images = $(".column img");
+        var currentIndex = 0;
 
+        images.on("click", function() {
+            modal.show();
+            modalImg.attr("src", $(this).attr("src"));
+            currentIndex = images.index(this);
+        });
+
+        $(".close").on("click", function() {
+            modal.hide();
+        });
+
+        $(".prev").on("click", function() {
+            currentIndex -= 1;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            modalImg.attr("src", images.eq(currentIndex).attr("src"));
+        });
+
+        $(".next").on("click", function() {
+            currentIndex += 1;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            modalImg.attr("src", images.eq(currentIndex).attr("src"));
+        });
+    });
+</script>
 </body>
 </html>
