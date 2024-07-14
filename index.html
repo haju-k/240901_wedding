@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/comms.css">
+  
   <title>Wedding Day</title>
 </head>
 
@@ -46,20 +47,16 @@
                 </svg>
             </div>
             <!--Waves end-->
-            <div class="header-bottom">
-                <div class="inner">
-                    <h3>이화석 ♥ 김주하 </h3>
-                    <P>2024년 9월 1일 일요일 오후 3시<br>
-                        마리아쥬스퀘어</P>
-                </div>
-            </div>
         </header>
        <!--header-->
+       <div class="scroll_wrap">
+
+       <div class="day">
+            <h3>이화석 ♥ 김주하 </h3>
+            <P>2024년 9월 1일 일요일 오후 3시<br>마리아쥬스퀘어</P>
+        </div>
+
         <section class="invitation">
-            <div class="img-area">
-                <img src="photo/img26.jpg">
-            </div>
-           
             <div class="tit_area">
                 <span>invitation</span>
                 <h3>소중한 분들을 초대합니다.</h3>
@@ -73,6 +70,16 @@
             가까이서 축복해 주시면<br>
             더 큰 기쁨으로 간직하겠습니다.
             </p>
+            <section>
+                <div class="img-area">
+                    <img src="photo/img26.jpg">
+                </div>
+                <ul class="name">
+                    <li>이해영 · 신순우의 아들 이화석</li>
+                    <li>&nbsp; 김생수 · 조일분의&nbsp;&nbsp;&nbsp;&nbsp;딸&nbsp;김주하</li>
+                </ul>
+            </section>
+           
         </section>
         <section class="photo">
             <div class="tit_area">
@@ -82,7 +89,7 @@
              <!-- Photo Grid -->
         <div class="row"> 
             <div class="column">
-                <img src="photo/img00.jpg" alt="">
+            <img src="photo/img00.jpg" alt="">
               <img src="photo/img02.jpg" alt="">
               <img src="photo/img14.jpg" alt="">
               <img src="photo/img20.jpg" alt="">
@@ -104,7 +111,6 @@
               <img src="photo/img22.jpg" alt="">
               <img src="photo/img23.jpg" alt="">
               <img src="photo/img16.jpg" alt="">
-              <img src="photo/img18.jpg" alt="">
               <img src="photo/img36.jpg" alt="">
               <img src="photo/img31.jpg" alt="">
               <img src="photo/img24.jpg" alt="">
@@ -119,6 +125,7 @@
             <div class="tit_area">
                 <span>map</span>
                 <h3>오시는 길</h3>
+                
                 <p class="map">
                     <span>마리아쥬스퀘어</span><br>
                     서울 강남구 도산대로 318 SB타워 G층<br><br>
@@ -132,11 +139,51 @@
                 <li class="li navi">
                 <div class="navi_button_wrap">
                     <a class="navi_button" href="https://naver.me/xAtFAFlU" target="_blank"><span>네이버지도</span></a>
-                    <a class="navi_button" onclick="fnCallWeb2App('tmap')"><span>티맵</span></a>
+                      <a class="navi_button" href="https://tmap.life/2e8d52cc" target="_blank"><span>티맵</span></a>
                     <a class="navi_button" href="https://kko.to/DXprp4kiBp" target="_blank" ><span>카카오내비</span></a>
                 </div>
                 </li>
             </ul>
+            </div>
+            <div class="location">
+                <ul>
+                    <li class="loading-row">
+                        <p>지하철</p>
+                        <ul>
+                            <li><strong><span style="color:#606D00;">●</span>강남구청역 3-1번,</strong> 학동사거리 방면 도보 10분</li>
+                             <li><strong><span style="color:#EDB217;">●</span>수인분당선 압구정로데오역 5번, </strong> 400M 도보 후 학동사거리<br>&nbsp; &nbsp;횡단보도 건너 우측 200M</li>
+                        </ul>
+                    </li>
+                    <li class="loading-row">
+                        <p>버스</p>
+                        <strong>제일은행.호림아트센터앞 [23-125]</strong>
+                        <ul>
+                            <li><span style="color:#395CB4;">●</span>145, 440</li>
+                            <li><span style="color:#3B9F37;">●</span>3011, 4212</li>
+                        </ul>
+                        <br>
+                        <strong>영동119.안전센터 [23-126]</strong>
+                        <ul>
+                            <li><span style="color:#3B9F37;">●</span>3011, 4212</li>
+                        </ul>
+                    </li>
+                    <li class="loading-row">
+                        <p>셔틀 운행</p>
+                        <ul>
+                            <li><span style="color:#606D00;">●</span>7호선,<span style="color:#EDB217;">●</span>분당선 강남구청역 3번출구 셔틀버스 이용</li>
+                        </ul>
+                    </li>
+                    <li class="pt30">
+                        <p>자가용</p>
+                        <strong>네비게이션 :"마리아쥬스퀘어"검색</strong>
+                        <ul>
+                            <li>주소 검색<br>
+                                &nbsp; &nbsp;"서울 강남구 도산대로 318"<br>&nbsp; &nbsp;"서울 강남구 논현동 92-12"</li>
+                            <li>도산공원 사거리 → 학동사거리 방면 100M 오른쪽 SB타워</li>
+                            <li>주차장 : SB타워 B2~B4층 (주차장 입구: 건물후면)</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -150,7 +197,7 @@
                     <div class="toggle-content">
                         <ul>
                             <li><p>신한은행 110-317-722227<br><span>이화석</span></p><button class="copy-button" onclick="copyToClipboard('110317722227')">복사하기</button></li>
-                            <li><p>국민은행 480001-01-237240<br><span>신순우</span></p><button class="copy-button" onclick="copyToClipboard('4800010123724')">복사하기</button></li>
+                            <li><p>국민은행 480001-01-237240<br><span>신순우</span></p><button class="copy-button" onclick="copyToClipboard('48000101237240')">복사하기</button></li>
                         </ul>
                     </div>
                 </li>
@@ -161,7 +208,7 @@
                         <ul>
                             <li><p>국민은행 012501-04-128126<br><span>김주하</span></p><button class="copy-button" onclick="copyToClipboard('01250104128126')">복사하기</button></li>
                             <li><p>농협    963-02-221096<br><span>김생수</span></p><button class="copy-button" onclick="copyToClipboard('96302221096')">복사하기</button></li>
-                            <li><p>신한은행 012501-04-128126<br><span>조일분</span></p><button class="copy-button" onclick="copyToClipboard('1234-5678-9101')">복사하기</button></li>
+                            <li><p>신한은행 110363230057<br><span>조일분</span></p><button class="copy-button" onclick="copyToClipboard('110363230057')">복사하기</button></li>
                         </ul>
                     </div>
                 </li>
@@ -176,9 +223,18 @@
                 the day we met</div>
         </div>
 
+       </div>
+        
         <!--.wedding-area-->
        </div>
     </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--계좌번호 복사-->
     <script>
@@ -187,37 +243,91 @@
         }
 
     $(document).ready(function() {
-        var modal = $("#myModal");
-        var modalImg = $("#img01");
-        var images = $(".column img");
-        var currentIndex = 0;
+    let slideIndex = 0;
+    const $slides = $('.column img');
+    const $modal = $('#modal');
+    const $modalImg = $('#modal-img');
+    const $closeModal = $('.close');
 
-        images.on("click", function() {
-            modal.show();
-            modalImg.attr("src", $(this).attr("src"));
-            currentIndex = images.index(this);
-        });
-
-        $(".close").on("click", function() {
-            modal.hide();
-        });
-
-        $(".prev").on("click", function() {
-            currentIndex -= 1;
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1;
-            }
-            modalImg.attr("src", images.eq(currentIndex).attr("src"));
-        });
-
-        $(".next").on("click", function() {
-            currentIndex += 1;
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
-            modalImg.attr("src", images.eq(currentIndex).attr("src"));
-        });
+    $slides.on('click', function() {
+        const index = $slides.index(this);
+        openModal();
+        currentSlide(index);
     });
-</script>
+
+    $closeModal.on('click', function() {
+        closeModal();
+    });
+
+    $('.prev').on('click', function() {
+        changeSlide(-1);
+    });
+
+    $('.next').on('click', function() {
+        changeSlide(1);
+    });
+
+    function openModal() {
+        $modal.css('display', 'block');
+    }
+
+    function closeModal() {
+        $modal.css('display', 'none');
+    }
+
+    function currentSlide(index) {
+        slideIndex = index;
+        showSlides(slideIndex);
+    }
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(index) {
+        if (index >= $slides.length) {
+            slideIndex = 0;
+        }
+        if (index < 0) {
+            slideIndex = $slides.length - 1;
+        }
+        $modalImg.attr('src', $slides.eq(slideIndex).attr('src'));
+    }
+});
+
+
+$(document).ready(function() {
+    // 클래스가 "scroll_on"인 모든 요소를 선택합니다.
+    const $counters = $(".scroll_on");
+    
+    // 노출 비율(%)과 애니메이션 반복 여부(true/false)를 설정합니다.
+    const exposurePercentage = 100; // ex) 스크롤 했을 때 $counters 컨텐츠가 화면에 100% 노출되면 숫자가 올라갑니다.
+    const loop = true; // 애니메이션 반복 여부를 설정합니다. (true로 설정할 경우, 요소가 화면에서 사라질 때 다시 숨겨집니다.)
+
+    // 윈도우의 스크롤 이벤트를 모니터링합니다.
+    $(window).on('scroll', function() {
+        // 각 "scroll_on" 클래스를 가진 요소에 대해 반복합니다.
+        $counters.each(function() {
+            const $el = $(this);
+    
+            // 요소의 위치 정보를 가져옵니다.
+            const rect = $el[0].getBoundingClientRect();
+            const winHeight = window.innerHeight; // 현재 브라우저 창의 높이
+            const contentHeight = rect.bottom - rect.top; // 요소의 높이
+            
+            // 요소가 화면에 특정 비율만큼 노출될 때 처리합니다.
+            if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100)) {
+                $el.addClass('active');
+            }
+            // 요소가 화면에서 완전히 사라졌을 때 처리합니다.
+            if (loop && (rect.bottom <= 0 || rect.top >= window.innerHeight)) {
+                $el.removeClass('active');
+            }
+        });
+    }).scroll();
+});
+
+
+    </script>
 </body>
 </html>
