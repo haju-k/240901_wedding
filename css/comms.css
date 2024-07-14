@@ -49,7 +49,7 @@ font-family: 'GowunBatang-Regular', sans-serif;
   padding-top:1rem; 
   line-height: 2.5rem;
   font-family: 'GowunBatang-Regular', sans-serif; 
-  font-size: 1.6rem;}
+  font-size: 1.4rem;}
 
   .header-bottom h3 {font-size: 2.8rem;}
   header .top-img img {max-width: 100%;}
@@ -57,8 +57,9 @@ font-family: 'GowunBatang-Regular', sans-serif;
 p {
 line-height: 2.5rem;
 font-family: 'GowunBatang-Regular', sans-serif; 
-font-size: 1.6rem;
+font-size: 1.4rem;
 }
+
 
 section {
   position: relative;
@@ -140,9 +141,10 @@ h3 { font-size: 3.2rem;}
 }
 
 .day {padding:5rem 0;}
+.day img {vertical-align: middle;}
 .day h3 {padding-bottom:2rem;}
 
-.name {padding-top:3rem; font-size: 1.6rem; line-height: 2.5rem;}
+.name {padding-top:3rem; font-size: 1.4rem; line-height: 2.5rem;}
 .name li:first-child::before {
   content:url(../img/ic-flower.png);}
 
@@ -189,7 +191,7 @@ p.map {
   padding-top:3rem; 
   font-size: 1.8rem;
   color: var(--txt-black);}
-  p.map span {font-size: 2.6rem;}
+  p.map span {font-size: 1.8rem;}
 
 /*토글*/
 .toggle-list {
@@ -209,7 +211,7 @@ p.map {
   line-height: 4rem;
   background-color: #ffff;
   color: #333;
-  font-size: 2rem;
+  font-size:1.6rem;
   text-align: center;
   padding: 1rem;
   cursor: pointer;
@@ -234,7 +236,7 @@ p.map {
   padding: 1.5rem 0;
   border-bottom: solid 1px #E1E4E9;
 }
-.toggle-content li p {font-size: 1.6rem; text-align: left; line-height: 2.5rem;}
+.toggle-content li p {font-size: 1.4rem; text-align: left; line-height: 2.5rem;}
 .toggle-content li span {font-weight: 700;}
 
 
@@ -449,7 +451,7 @@ ul.wayto .navi_button>span {
   align-items: flex-start;
 }
  .location li {text-align: left; }
- .location ul li {font-size: 1.6rem;line-height: 2.4rem; }
+ .location ul li {font-size: 1.4rem;line-height: 2.4rem; }
 .loading-row {padding:3rem 0; border-bottom: 1px dotted #aaa;}
 .loading-row strong {padding-bottom: 1rem;}
  .location ul li span {font-size: 2.6rem; font-weight: 700; padding-bottom:1rem;}
