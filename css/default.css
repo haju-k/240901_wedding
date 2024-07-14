@@ -65,7 +65,6 @@ th, td{border-collapse:collapse}
 legend, caption, hr{display:none}
 select, input, textarea {padding: 0;-webkit-appearance: none;border-radius: 0;}
 i, em, u, cite {font-style:normal}
-strong{font-weight:normal}
 a {color:var(--txt-black):none; outline-offset:-1px; text-decoration:none;}
 
 input::placeholder {color: #c2c2c2;opacity: 1}
