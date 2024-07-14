@@ -454,7 +454,7 @@ ul.wayto .navi_button>span {
  .location ul li {font-size: 1.4rem;line-height: 2.4rem; }
 .loading-row {padding:3rem 0; border-bottom: 1px dotted #aaa;}
 .loading-row strong {padding-bottom: 1rem;}
- .location ul li span {font-size: 2.6rem; font-weight: 700; padding-bottom:1rem;}
+ .location ul li span {font-weight: 700; padding-bottom:1rem;}
 
 .location p {padding-bottom:1.5rem; font-size:2rem; font-weight: 700;}
 
