@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/comms.css">
+  <link rel="stylesheet" href="css/sakura.css">
 
   
   <title>Wedding Day</title>
@@ -235,14 +236,25 @@
         <a class="next">&#10095;</a>
     </div>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!--계좌번호 복사-->
     <script>
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text);
+            var tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
         }
+
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="imgslider.js"></script>
+    <script src="dist/sakura.js" text="text/javascript"></script>
+    <script>
+      const sakura = new Sakura('body');
+    </script>
     
 </body>
 </html>
